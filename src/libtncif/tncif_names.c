@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 Andreas Steffen
+ * Copyright (C) 2010-2015 Andreas Steffen
  * HSR Hochschule fuer Technik Rapperswil
  *
  * This program is free software; you can redistribute it and/or modify it
@@ -45,6 +45,25 @@ ENUM(TNC_IMV_Evaluation_Result_names,
 	"error",
 	"don't know"
 );
+
+ENUM(TNC_Identity_names,
+	TNC_ID_UNKNOWN,
+	TNC_ID_X500_DN,
+	"unknown",
+	"IPv4 address",
+	"IPv6 address",
+	"FQDN",
+	"email address",
+	"username",
+	"X.500 DN"
+);
+
+#define TNC_ID_IPV4_ADDR 1
+#define TNC_ID_IPV6_ADDR 2
+#define TNC_ID_FQDN 3
+#define TNC_ID_EMAIL_ADDR 4
+#define TNC_ID_USERNAME 5
+#define TNC_ID_X500_DN 6
 
 ENUM(TNC_Subject_names,
 	TNC_SUBJECT_UNKNOWN,
